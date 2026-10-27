@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <ProjectReference Include="../../libs/shared/Encore.Shared.csproj" />
+    <ProjectReference Include="../../libs/identity/Encore.Identity.csproj" />
+    <ProjectReference Include="../../libs/orders/Encore.Orders.csproj" />
+    <ProjectReference Include="../../libs/gigs/Encore.Gigs.csproj" />
+    <ProjectReference Include="../../libs/passes/Encore.Passes.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Encore.IntegrationTests" />
+  </ItemGroup>
+</Project>
